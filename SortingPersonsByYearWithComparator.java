@@ -8,7 +8,7 @@ public class SortingPersonsByYearWithComparator
            new Person ("Beke", 1957),
            new Person("Sammy",1972), 
            new Person("Linda", 1971)};
-           
+        
        // sort with a comparator
        /* note that the comparator is called with a 
         * new comparator object
@@ -20,5 +20,11 @@ public class SortingPersonsByYearWithComparator
        
        for (Person p: people)
           System.out.println(p.getYear() + " "+p);
+          
+        
+        OrderByYear oby = new OrderByYear();
+        System.out.println(oby.compare(people[0], people[1]));
+        System.out.println(oby.compare(people[0], people[4]));
+        
     }
 }
