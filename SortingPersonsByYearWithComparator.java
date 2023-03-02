@@ -21,7 +21,10 @@ public class SortingPersonsByYearWithComparator
        for (Person p: people)
           System.out.println(p.getYear() + " "+p);
           
-       // let's see if we can figure out how to use this on it's own 
+       // let's see if we can figure out how to use this on it's own
+       OrderByYear oby = new OrderByYear();
+       System.out.println(oby.compare(people[0], people[1]));
+       System.out.println(oby.compare(people[0], people[4]));
        
         
     }
