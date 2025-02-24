@@ -28,7 +28,7 @@ public class Person implements Comparable<Person>, Player {
     
     // methods of the Comparable interface
     public int compareTo (Person p) {
-        return name.compareTo(p.name);
+        return name.compareTo(p.name); // this compareTo() is defined in String
     }
     
     // original methods of Person
