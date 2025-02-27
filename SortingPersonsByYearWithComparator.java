@@ -25,7 +25,6 @@ public class SortingPersonsByYearWithComparator
        OrderByYear oby = new OrderByYear();
        System.out.println(oby.compare(people[0], people[1]));
        System.out.println(oby.compare(people[0], people[4]));
-       
         
     }
 }
